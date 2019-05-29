@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/iconLanguage"
+        android:icon="@drawable/ic_lang_en"
+        android:title="some"
+        app:showAsAction="always"
+        />
+    <!--<item android:id="@+id/iconUser"-->
+        <!--android:icon="@drawable/ic_lang_bn"-->
+        <!--android:title="some"-->
+        <!--app:showAsAction="always"-->
+        <!--/>-->
+</menu>

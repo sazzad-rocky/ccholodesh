@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".AboutUsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="5"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/ic_launcher" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Contact : House-123, Flat-6A, Road-13A
+West Dhanmondi, Dhaka - 1209
+Bangladesh "
+                    android:textColor="#000000"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/tvcontact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+
+                    android:layout_weight="0.80"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Send Message"
+                    android:textColor="#053491"
+                    android:textSize="24dp"
+
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+
+                    android:background="@drawable/edittext_contact"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:background="#053491"
+                        android:padding="8dp"
+                        android:src="@drawable/man_pic" />
+
+                    <EditText
+                        android:id="@+id/etName"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="5"
+                        android:background="@drawable/edittext_contact"
+                        android:gravity="center"
+                        android:hint="Name"
+                        android:inputType="text"
+                        android:padding="5dp"
+                        android:textColor="@color/text_colorwhite"
+                        android:textColorHint="@color/text_colorwhite"
+                        android:textSize="22dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/edittext_contact"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:background="#053491"
+
+                        android:padding="8dp"
+                        android:src="@drawable/gmail" />
+
+                    <EditText
+                        android:id="@+id/etEmail"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="5"
+
+                        android:background="@drawable/edittext_contact"
+                        android:gravity="center"
+                        android:hint="Email"
+                        android:inputType="textEmailAddress"
+                        android:padding="5dp"
+                        android:textColor="@color/text_colorwhite"
+                        android:textColorHint="@color/text_colorwhite"
+                        android:textSize="22dp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:background="#053491"
+                        android:padding="8dp"
+                        android:src="@drawable/phone" />
+
+                    <EditText
+                        android:id="@+id/etPhone"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="5"
+                        android:background="@drawable/edittext_contact"
+                        android:gravity="center"
+                        android:hint="Phone"
+                        android:inputType="number"
+                        android:padding="5dp"
+                        android:textColor="@color/text_colorwhite"
+                        android:textColorHint="@color/text_colorwhite"
+                        android:textSize="22dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:background="#053491"
+                        android:padding="8dp"
+                        android:src="@drawable/message" />
+
+                    <EditText
+                        android:id="@+id/etMassage"
+                        android:layout_width="0dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="5"
+                        android:background="@drawable/edittext_contact"
+                        android:gravity="center"
+                        android:hint="message"
+                        android:inputType="textMultiLine"
+                        android:padding="5dp"
+                        android:textColor="@color/text_colorwhite"
+                        android:textColorHint="@color/text_colorwhite"
+                        android:textSize="22dp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnsubmit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/submit_contact"
+                    android:ems="7"
+                    android:onClick="submitMassageServer"
+                    android:padding="7dp"
+                    android:text="Submit"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/linear3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="casual"
+                        android:onClick="Email"
+                        android:paddingTop="10dp"
+                        android:text="contact@twistermedia.com"
+
+                        android:textColor="#053491"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:drawablePadding="-5sp"
+                            android:fontFamily="sans-serif-smallcaps"
+
+                            android:gravity="center"
+                            android:onClick="call"
+                            android:paddingTop="10dp"
+                            android:text="  +88 01819214616"
+                            android:textColor="#053491"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:drawablePadding="-5sp"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:gravity="center"
+                            android:onClick="calltwo"
+                            android:paddingTop="10dp"
+                            android:text="  +88 02 58610418"
+                            android:textColor="#053491"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity2">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+    <EditText
+        android:layout_width="0dp"
+        android:id="@+id/edittext"
+        android:hint="Enter Address"
+        android:textSize="18dp"
+        android:layout_weight="1"
+        android:layout_height="50dp" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="go"
+            android:textAllCaps="false"
+            android:textSize="18dp"
+            android:id="@+id/go"
+            android:onClick="geolocatee"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:background="@drawable/rounded_button"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <fragment
+            android:layout_width="match_parent"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:id="@+id/map"
+            android:layout_height="match_parent"
+            >
+        </fragment>
+        <Button
+            android:layout_width="wrap_content"
+            android:text="Map View"
+            android:textAllCaps="false"
+            android:id="@+id/btnpopup"
+            android:textSize="17dp"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</LinearLayout>

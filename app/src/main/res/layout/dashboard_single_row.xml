@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:padding="2dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="trip line"
+        android:id="@+id/tripLine"
+        android:textSize="20dp"
+        android:textColor="#000000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="startDate"
+        android:id="@+id/startdate"
+        android:textSize="18dp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cost"
+        android:textSize="18dp"
+        android:id="@+id/totalcost"
+        android:textColor="#000000"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:layout_height="wrap_content"
+        android:text="status"
+        android:id="@+id/status"
+        android:textSize="18dp"
+        android:textColor="#000000"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Detail's"
+            android:gravity="center"
+            android:layout_gravity="end"
+            android:background="#d97e17"
+            android:id="@+id/details"
+            android:layout_margin="5dp"
+            android:padding="7dp"
+            android:textSize="18dp"
+            android:textColor="#ffffff"/>
+
+</LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#000000"/>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2017. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  ~ Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.
+  ~ Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
+  ~ Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
+  ~ Vestibulum commodo. Ut rhoncus gravida arcu.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:padding="20dp"
+    android:id = "@+id/incParetn"
+    android:layout_margin="5dp"
+    android:background="@drawable/drawable_border_around"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/inclusionImage"
+        android:layout_width="100dp"
+        android:layout_gravity="center"
+        android:padding="5dp"
+        android:src="@drawable/icon_airoplane"
+        android:tint="#9999"
+        android:visibility="gone"
+        android:layout_height="100dp" />
+
+    <TextView
+        android:id="@+id/inclusionName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="Swimming "
+        android:textStyle="bold"
+        android:textColor="@color/ms_black"/>
+
+</LinearLayout>

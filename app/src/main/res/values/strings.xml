@@ -1,0 +1,96 @@
+<resources>
+    <string name="app_name">CholoDesh</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_custome_trip">Transport Route</string>
+    <string name="destinationListPrompt">Select One Destination</string>
+
+    <string name="map_type_none">None</string>
+    <string name="map_type_normal">Normal</string>
+    <string name="map_type_terrain">Terrain</string>
+    <string name="map_type_satellite">Satellite</string>
+    <string name="map_type_hybrid">Hybrid</string>
+
+
+    <string-array name="dummy">
+        <item>Select Place</item>
+        <item>Student</item>
+        <item>Prof</item>
+        <item>staff</item>
+        <item>research student</item>
+    </string-array>
+    <string-array name="time">
+        <item>AM</item>
+        <item>PM</item>
+        <item>AM-PM</item>
+
+    </string-array>
+
+    <string-array name="timeBn">
+        <item>পূর্বাহ্ণ</item>
+        <item>অপরাহ্ন</item>
+        <item>পূর্বাহ্ণ-অপরাহ্ন</item>
+
+    </string-array>
+    <string-array name="plan">
+        <item>Day 1</item>
+        <item>Day 2</item>
+        <item>Day 3</item>
+    </string-array>
+
+    <string-array name="star">
+        <item>Select Category</item>
+        <item>Boutique</item>
+        <item>Budget</item>
+        <item>3 Star</item>
+        <item>4 Star</item>
+        <item>5 Star</item>
+    </string-array>
+
+    <string-array name="starBn">
+        <item>বিভাগ নির্বাচন করুন</item>
+        <item> বুটিক </item>
+        <item> বাজেট  </item>
+        <item>৩ তারকা </item>
+        <item>৪ তারকা </item>
+        <item>৫ তারকা </item>
+    </string-array>
+
+    <string-array name="ratingBn">
+        <item>রেটিং নির্বাচন করুন </item>
+        <item>১ ~ ২</item>
+        <item>২ ~ ৩</item>
+        <item>৩ ~ ৪ </item>
+        <item>৪ ~ ৫</item>
+
+    </string-array>
+
+    <string-array name="rating">
+        <item>Select Rating</item>
+        <item>1 ~ 2</item>
+        <item>2 ~ 3</item>
+        <item>3 ~ 4</item>
+        <item>4 ~ 5</item>
+
+    </string-array>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_accommodation">Choose Accommodation</string>
+    <string name="preference_file_key">cholo_desh_data</string>
+    <string name="title_activity_trip_planner">Create Your Tour Plan</string>
+    <string name="title_activity_registration">RegistrationActivity</string>
+    <string name="title_activity_hotel_details">HotelDetailsActivity</string>
+    <string name="title_activity_package_details">PackageDetails</string>
+    <string name="title_activity_booking">BookingActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_custom_trip_plan_accomodation">CustomTripPlanAccomodation</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_operator">OperatorActivity</string>
+    <string name="title_activity_maps2">Map</string>
+</resources>

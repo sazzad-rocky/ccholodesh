@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2017. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  ~ Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.
+  ~ Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
+  ~ Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
+  ~ Vestibulum commodo. Ut rhoncus gravida arcu.
+  -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id = "@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:id= "@+id/providername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Res Name"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/ms_black"
+            android:layout_marginTop="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatRatingBar
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                style="?android:attr/ratingBarStyleSmall"
+                android:rating="0"
+                android:id = "@+id/ratingBar"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:id = "@+id/nofRevies"
+                android:textColor="@color/ms_white"
+                android:background="@drawable/rounded_button"
+                android:textStyle="bold"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="0 Reviews"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id = "@+id/category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Bangla"
+            android:textSize="13sp"
+            android:textColor="@color/ms_black"
+            android:background="@drawable/drawable_border_around"
+            android:padding="5dp"/>
+
+        <TextView
+            android:id = "@+id/resinfoforlang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Restaurant Information"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/ms_black"
+            android:layout_marginTop="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_phone"
+
+                />
+            <TextView
+                android:id = "@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=""
+                android:gravity="center"
+                android:textColor="@color/ms_black"
+                android:layout_marginLeft="20dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_mail"
+
+                />
+            <TextView
+                android:id = "@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="email"
+                android:gravity="left|center"
+                android:textColor="@color/ms_black"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginTop="10dp"
+
+            android:background="@drawable/drawable_border_top_bottom"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_address"
+                />
+            <TextView
+                android:id = "@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="address"
+                android:gravity="left|center"
+                android:textColor="@color/ms_black"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+        </LinearLayout>
+        <TextView
+            android:id = "@+id/detailsforlang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Details"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/ms_black"
+            android:layout_marginTop="10dp"/>
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#444444"
+            android:id = "@+id/description2"
+            android:visibility="gone"
+            android:text=""/>
+
+
+        <TextView
+
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:text=""
+            android:textColor="#444444" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:background="@drawable/rounded_button"
+            android:textColor="@color/ms_white"
+            android:id = "@+id/details"
+            android:text="Show More"
+            android:textSize="10sp"
+            android:textStyle="italic"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id = "@+id/wrtrevieforlang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Write A Review"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="16sp"
+            android:textColor="@color/ms_black"/>
+
+
+        <TextView
+            android:id = "@+id/tapforlang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tap to Give a Review"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:textSize="15sp"
+            android:textColor="@color/ms_black"/>
+
+        <TextView
+            android:id = "@+id/tapAgainforlang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(You Can Tap Again after Review to Edit)"
+            android:textStyle="italic"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:textSize="10sp"
+            android:textColor="#666"/>
+
+        <android.support.v7.widget.AppCompatRatingBar
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:id = "@+id/ratingGiving"
+            />
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/ratings"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+</ScrollView>

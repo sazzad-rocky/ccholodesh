@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="#ffffff"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="5dp"
+    app:cardElevation="2dp"
+    app:cardCornerRadius="5dp">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id = "@+id/parent"
+
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/attractionImage"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            />
+
+        <TextView
+            android:id="@+id/attractionName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="N/A"
+            android:textStyle="bold"
+            android:background="@color/colorPrimary"
+            android:textColor="#ffffff"
+            android:gravity="center"/>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+
+

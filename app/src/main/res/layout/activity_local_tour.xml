@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:focusableInTouchMode="true"
+    android:layout_height="match_parent"
+    tools:context=".LocalTourActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:focusableInTouchMode="true"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/calculationPerPerson"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:background="#28dddddd"
+                android:weightSum="2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/totalForLang"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.1"
+                    android:gravity="center"
+                    android:text=" Estimated Total Cost:"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="10dp"
+                    android:background="#dddddd"
+                    android:textColor="#000"
+
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/totalCost"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".9"
+                    android:gravity="center"
+                    android:text="00 ৳"
+                    android:textColor="@color/colorPrimary"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:background="#eeeeee"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_weight="1"
+
+                android:background="#28dddddd"
+                android:weightSum="2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/estimaforlang"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.1"
+                    android:gravity="center"
+                    android:text="Estimated Itenarary Cost:"
+                    android:textColor="#000"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp"
+                    android:background="#dddddd"
+
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/totalCostView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".9"
+                    android:gravity="center"
+                    android:background="#eeeeee"
+                    android:text="00 ৳"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <AutoCompleteTextView
+            android:id="@+id/tourist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="8dp"
+            android:inputType="number"
+            android:background="#eeeeee"
+            android:hint="Number of Tourist"
+            android:padding="10dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal">
+        <AutoCompleteTextView
+            android:id="@+id/locationAutoComplete"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            android:background="#eeeeee"
+            android:hint="Location"
+
+            android:padding="10dp" />
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:textSize="18dp"
+                android:layout_marginRight="4dp"
+                android:id="@+id/tvnext"
+                android:background="#E9AB0A"
+                android:layout_height="wrap_content"
+                android:text="Next"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:weightSum="2">
+            <TextView
+                android:paddingLeft="10dp"
+                android:layout_height="40dp"
+                android:layout_width="0dp"
+                android:text="District"
+                android:id = "@+id/districtForLang"
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                android:textColor="#000"
+                android:layout_weight="1"/>
+            <Spinner
+                android:id="@+id/spinnerDistricts"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+
+                android:prompt="@string/destinationListPrompt"
+                android:spinnerMode="dialog" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:weightSum="2">
+            <TextView
+                android:paddingLeft="10dp"
+                android:layout_height="40dp"
+                android:layout_width="0dp"
+                android:text="Local Tour"
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                android:id = "@+id/nearByPlaceForLang"
+                android:textColor="#000"
+                android:layout_weight="1"/>
+            <Spinner
+                android:id="@+id/spinnerDestinations"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:prompt="@string/destinationListPrompt"
+                android:spinnerMode="dialog" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:id = "@+id/notifyTxtForLang"
+            android:text="You are viewing the list of single users for group check the below box "
+            android:gravity=""
+            android:background="#f0f096"
+            android:textColor="#000"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id = "@+id/groupSelect"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Group"
+                android:visibility="gone"
+                android:textSize="17sp"
+                android:textColor="#000"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearBasicInputHolder"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/drawable_border_around"
+            android:orientation="horizontal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <Button
+                android:id="@+id/dayminus"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".3"
+                android:background="@drawable/rounded_button"
+                android:drawableLeft="@drawable/icon_left_arrow_16"
+                android:drawableTint="#ffffff"
+                android:paddingLeft="6dp" />
+
+            <TextView
+                android:id="@+id/dayplanSelector"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.4"
+                android:gravity="center"
+                android:text="Take Date"
+                android:textColor="@color/ms_black"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/dayplus"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".3"
+                android:background="@drawable/rounded_button"
+                android:drawableLeft="@drawable/icon_right_angle_16"
+                android:drawableTint="#ffffff"
+                android:paddingLeft="6dp" />
+            <Spinner
+                android:id="@+id/spinnertourTime"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.26"
+                android:entries="@array/time"
+                android:gravity="center"></Spinner>
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/localtripListView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toTopOf="@+id/itineraryListHolder"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearBasicInputHolder" />
+        <ImageView
+            android:id="@+id/placeHolderImage"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/image_placeholder"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/placeHolderText"
+            android:scaleType="center"
+            android:textStyle="bold"
+            android:text="No Local Trip Found for this Place"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ddd"
+            android:padding="7dp"
+            android:text="Selected Iterenary"
+            android:id = "@+id/selectedItirenaryForLang"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="16sp" />
+        <LinearLayout
+            android:id="@+id/itineraryListHolder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+            <TextView
+                android:id="@+id/itineraryPlaceholderText"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:text="Click List iiem to Add Itenarary"/>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/itineraryListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical"
+                app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

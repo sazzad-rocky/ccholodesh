@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.olivine.parjatanbichitra.cholodesh">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission. ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <permission
+        android:name="com.olivine.parjatanbichitra.cholodesh.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+    <application
+        android:allowBackup="true"
+        android:authorities="com.olivine.parjatanbichitra.cholodesh.fileprovider"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:windowSoftInputMode="stateVisible|adjustResize">
+
+
+        <activity android:name=".LocalTourActivity"/>
+        <activity android:name=".AboutUsActivity" />
+        <!-- <provider -->
+        <!-- android:name="android.support.v4.content.FileProvider" -->
+        <!-- android:authorities="${com.olivine.parjatanbichitra.cholodesh}.provider" -->
+        <!-- android:exported="false" -->
+        <!-- android:grantUriPermissions="true"> -->
+        <!-- <meta-data -->
+        <!-- android:name="android.support.FILE_PROVIDER_PATHS" -->
+        <!-- android:resource="@xml/provider_paths"/> -->
+        <!-- </provider> -->
+        <activity android:name=".LoginActivity" />
+        <activity
+            android:name=".TripRouteActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_custome_trip"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ItineraryPlanner" />
+        <activity
+            android:name=".TailorMadeActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="TailorMade"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AccommodationActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_accommodation"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".AccommodationProviderActivity" />
+        <activity
+            android:name=".TripPlannerActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_trip_planner"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AccommodationRoomlistActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".TailormadeListActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".RegistrationActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_registration"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FoodListActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".HotelListActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".HotelDetailsActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_hotel_details"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HotelRoomListActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".PackageDetailsActivity"
+            android:label="Package Details"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PackageItinerayActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DestinationActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="Destination"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ShowPopUp"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".NearByPlaceDetailsActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="Near By Place"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RatingActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="Rating"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FoodDetailsActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="Food"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DestinationLocalTourDetails"
+            android:configChanges="orientation|screenSize"
+            android:label="Local Tour"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NewTripRouteActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_custome_trip"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CustomTripPlanTransportSelection"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".CustomTripPlanAccomodation"
+            android:label="@string/title_activity_custom_trip_plan_accomodation"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TailorMadeEditActivity"
+            android:label="TailorMade" />
+        <activity
+            android:name=".TailorMadeEditTransport"
+            android:label="@string/title_activity_custome_trip" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".TOurOperatorSelectionActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".OperatorActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MapsActivity2"
+            android:label="@string/title_activity_maps2" />
+        <activity android:name=".DashBoardActivity" />
+    </application>
+
+</manifest>

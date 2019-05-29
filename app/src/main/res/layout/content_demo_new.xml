@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2017. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  ~ Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.
+  ~ Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
+  ~ Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
+  ~ Vestibulum commodo. Ut rhoncus gravida arcu.
+  -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    >
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <com.daimajia.slider.library.SliderLayout
+            android:id="@+id/mDemoSlider"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#ffffff"
+            android:layout_marginTop="142dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+            <TextView
+                android:id = "@+id/bdforlangchnge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Where in Bangladesh"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:textColor="@color/ms_black"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_gravity="center"
+                android:weightSum="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/placement"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DIVISION: "
+                    android:textSize="15sp"
+                    android:visibility="gone"
+                    android:textColor="@color/ms_black"/>
+
+                <TextView
+                    android:id="@+id/divisionForLangChange"
+                    android:layout_weight=".05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DIVISION: "
+                    android:textSize="15sp"
+                    android:visibility="gone"
+                    android:textColor="@color/ms_black"/>
+                <TextView
+                    android:id="@+id/textViewDivision"
+                    android:layout_weight=".45"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Loading..."
+                    android:textSize="15sp"
+                    android:visibility="gone"
+
+                    android:textColor="@color/ms_black"/>
+                <TextView
+                    android:id="@+id/distrcitForLangChange"
+                    android:layout_weight=".05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DISTRICT:"
+                    android:textSize="15sp"
+                    android:visibility="gone"
+
+                    android:textColor="@color/ms_black"/>
+                <TextView
+                    android:id="@+id/textViewDistrict"
+                    android:layout_weight=".45"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Loading..."
+                    android:textSize="15sp"
+                    android:visibility="gone"
+
+                    android:textColor="@color/ms_black"/>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/destinationName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loading..."
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/ms_black"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/tags"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/textView2"
+                android:layout_below="@+id/textView2"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                app:layoutManager="android.support.v7.widget.LinearLayoutManager"></android.support.v7.widget.RecyclerView>
+
+            <TextView
+                android:id= "@+id/aboutforlang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/ms_black"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:text="About" />
+
+            <!--<com.ms.square.android.expandabletextview.ExpandableTextView-->
+
+                <!--android:id="@+id/expand_text_view"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--expandableTextView:maxCollapsedLines="4"-->
+                <!--expandableTextView:animDuration="200">-->
+                <!--<TextView-->
+                    <!--android:id="@+id/destinationDetails"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="20dp"-->
+                    <!--android:layout_marginRight="20dp"-->
+                    <!--android:layout_marginTop="2dp"-->
+
+                    <!--android:textColor="@color/ms_black" />-->
+                <!--<ImageButton-->
+                    <!--android:id="@id/expand_collapse"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:padding="16dp"-->
+                    <!--android:layout_gravity="right|bottom"-->
+                    <!--android:background="@android:color/transparent"/>-->
+            <!--</com.ms.square.android.expandabletextview.ExpandableTextView>-->
+
+            <TextView
+                android:id="@+id/destinationDetails"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/ms_black"
+                android:lineSpacingMultiplier="1"
+                android:text="TextView" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:background="@drawable/rounded_button"
+                android:textColor="@color/ms_white"
+                android:id = "@+id/details"
+                android:text="Show More"
+                android:textSize="10sp"
+                android:textStyle="italic"
+                android:visibility="gone"
+
+                />
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabs"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:layout_gravity="center_horizontal"
+                app:tabMode="scrollable"
+                app:tabSelectedTextColor="@color/ms_black"
+                app:tabIndicatorColor="#555555"
+                app:tabTextColor="#555555" />
+
+
+            <!--<view-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--class="helpers.CustomPager"-->
+            <!--android:id="@+id/container"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_alignParentLeft="true"/>-->
+
+
+            <android.support.v4.view.ViewPager
+
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>
